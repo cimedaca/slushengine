@@ -1,14 +1,14 @@
 SlushEngine Usage Instructions
 ==============================
 
-Using the SlushEngine Python software package is relativley simple once all of the required packages have been installed. Before powering a SlushEngine device please ensure that you read the hardware notes listed below.
+Using the SlushEngine Python software package is relatively simple once all of the required packages have been installed. Before powering a SlushEngine device please ensure that you read the hardware notes listed below.
 
 Hardware Setup
 --------------
 
-1. Check for correct polarity of the power conection to the SlushDevice
+1. Check for correct polarity of the power connection to the SlushDevice
 2. Check the voltage to the device is within its operating range
-3. Check the oreientation of the connectors between the Raspberry Pi and the SlushEngine device
+3. Check the orientation of the connectors between the Raspberry Pi and the SlushEngine device
 4. Have some method of communication with the Raspberri Pi setup. (ie. SSH Terminal, Screen & Keyboard, etc...)
 
 
@@ -38,14 +38,14 @@ Then we need to create the motor object. Depending on the Slush device in use mu
 
 > $ Motor = Slush.Motor(0)
 
-Finally to move the motor a simple command is passed to the motor obect that was created. This command will move the motor a specific number of steps. The direction of motion is based on the signage of the intager passed to the object.
+Finally to move the motor a simple command is passed to the motor object that was created. This command will move the motor a specific number of steps. The direction of motion is based on the signage of the integer passed to the object.
 
 > $ Motor.move(-100000)
 
 Changing Motor Settings
 -----------------------
 
-At any point during operation when a motor is not busy the setting can be changed to alter the motors preformance. An example might be changing the motors microstepping level to allow faster motion. This is done by changing the propoerties of the particular motor object. Each initalized motor object can have diffrent settings from others on the same device.
+At any point during operation when a motor is not busy the setting can be changed to alter the motors performance. An example might be changing the motors microstepping level to allow faster motion. This is done by changing the properties of the particular motor object. Each initialized motor object can have different settings from others on the same device.
 
 For example if we wanted to change the motors microstep settings
 
